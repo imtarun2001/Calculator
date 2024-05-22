@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    <div id="container">
+        <div id="calculator">
+            <div id="resultDisplayer">
+                <div id="resultText">CALCULATOR <i class="fa-solid fa-calculator"></i></div>
+                <div id="result"></div>
+            </div>
+            <div id="trigonometricOperators">
+                <button class="trigonometricFunctions" id="sin">SIN</button>
+                <button class="trigonometricFunctions" id="cos">COS</button>
+                <button class="trigonometricFunctions" id="tan">TAN</button>
+                <button class="trigonometricFunctions" id="cot">COT</button>
+                <button class="trigonometricFunctions" id="sec">SEC</button>
+                <button class="trigonometricFunctions" id="cosec">COSEC</button>
+            </div>
+            <div id="digitsNOtherOperators">
+                <div id="logNPowerOperators">
+                    <button class="trigonometricFunctions" id="log">LOG</button>
+                    <button class="trigonometricFunctions" id="x2">X²</button>
+                    <button class="trigonometricFunctions fa-solid fa-square-root-variable" id="squareRoot"></button>
+                    <button class="trigonometricFunctions" style="font-size: 2.5rem; font-weight: 600;" id="pi">π</button>
+                    <button class="trigonometricFunctions" id="clear">CLR</button>
+                    <button class="trigonometricFunctions fa-solid fa-delete-left" style="font-size: 2rem;" id="backspace"></button>
+                </div>
+                <div id="digitsNArithmaticOperators">
+                    <div id="digits">
+                        <div id="initial3" class="containerOf3Digits">
+                            <button class="digitsfrom0to9" id="one">1</button>
+                            <button class="digitsfrom0to9" id="two">2</button>
+                            <button class="digitsfrom0to9" id="three">3</button>
+                        </div>
+                        <div id="middle3" class="containerOf3Digits">
+                            <button class="digitsfrom0to9" id="four">4</button>
+                            <button class="digitsfrom0to9" id="five">5</button>
+                            <button class="digitsfrom0to9" id="six">6</button>
+                        </div>
+                        <div id="last3" class="containerOf3Digits">
+                            <button class="digitsfrom0to9" id="seven">7</button>
+                            <button class="digitsfrom0to9" id="eight">8</button>
+                            <button class="digitsfrom0to9" id="nine">9</button>
+                        </div>
+                        <div id="lastA3" class="containerOf3Digits">
+                            <button class="digitsfrom0to9" id="zeroZero">00</button>
+                            <button class="digitsfrom0to9" id="zero">0</button>
+                            <button class="digitsfrom0to9" id="dot">.</button>
+                        </div>
+                    </div>
+                    <div id="arithmaticOperators">
+                        <button class="arithmatic fa-solid fa-equals" id="equals"></button>
+                        <button class="arithmatic fa-solid fa-plus" id="plus"></button>
+                        <button class="arithmatic fa-solid fa-minus" id="minus"></button>
+                        <button class="arithmatic fa-solid fa-xmark" id="multiply"></button>
+                        <button class="arithmatic fa-solid fa-divide" id="divide"></button>
+                        <button class="arithmatic fa-solid fa-percent" id="percentage"></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./app.js"></script>
+    <script src="https://kit.fontawesome.com/c864b53c3e.js" crossorigin="anonymous"></script>
+</body>
+</html>
